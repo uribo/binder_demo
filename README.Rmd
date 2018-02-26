@@ -18,3 +18,12 @@ knitr::opts_chunk$set(
 library(usethis)
 use_binder_badge()
 ```
+
+## Local Session Information
+
+```{r}
+sessionInfo()
+```
+
+
+
