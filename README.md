@@ -10,6 +10,12 @@ library(usethis)
 use_binder_badge()
 ```
 
+⚠️ 注意 🚧
+
+binderが公式にRStudioのサポートを開始したようだが、 採用しているdockerimageで`install.R` が実行されないというバグが[発生している](https://github.com/jupyter/repo2docker/issues/237)。
+
+そのためここでは、従来のDockerfileを使ったパッケージのインストール と`.Rprofile`によるパッケージの更新を試みている。
+
 Local Session Information
 -------------------------
 
@@ -33,9 +39,13 @@ sessionInfo()
 #> [1] usethis_1.2.0.9000
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] Rcpp_0.12.15    digest_0.6.15   rprojroot_1.3-2 R6_2.2.2       
-#>  [5] jsonlite_1.5    backports_1.1.2 magrittr_1.5    evaluate_0.10.1
-#>  [9] httr_1.3.1      stringi_1.1.6   ini_0.3.0       rmarkdown_1.8  
-#> [13] gh_1.0.1        tools_3.4.3     stringr_1.2.0   yaml_2.1.16    
-#> [17] compiler_3.4.3  htmltools_0.3.6 knitr_1.19
+#>  [1] Rcpp_0.12.15     rstudioapi_0.7   knitr_1.19       bindr_0.1       
+#>  [5] magrittr_1.5     R6_2.2.2         rlang_0.2.0.9000 stringr_1.3.0   
+#>  [9] httr_1.3.1       dplyr_0.7.4      tools_3.4.3      htmltools_0.3.6 
+#> [13] yaml_2.1.16      rprojroot_1.3-2  digest_0.6.15    assertthat_0.2.0
+#> [17] tibble_1.4.2     crayon_1.3.4     bindrcpp_0.2     ini_0.3.0       
+#> [21] purrr_0.2.4      glue_1.2.0       evaluate_0.10.1  rmarkdown_1.8   
+#> [25] emo_0.0.0.9000   gh_1.0.1         stringi_1.1.6    pillar_1.1.0    
+#> [29] compiler_3.4.3   backports_1.1.2  lubridate_1.7.2  jsonlite_1.5    
+#> [33] pkgconfig_2.0.1
 ```
