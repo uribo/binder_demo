@@ -1,0 +1,20 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+# binder_demo
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uribo/binder_demo/master)
+
+```{r}
+library(usethis)
+use_binder_badge()
+```
