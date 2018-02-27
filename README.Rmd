@@ -24,7 +24,7 @@ use_binder_badge()
 binderが公式にRStudioのサポートを開始したようだが、 採用しているdockerimageで`install.R` が実行されないというバグが[発生している](https://github.com/jupyter/repo2docker/issues/237)。
 
 そのためここでは、従来のDockerfileを使ったパッケージのインストール
-と`.Rprofile`によるパッケージの更新を試みている。
+~~と`.Rprofile`~~によるパッケージの更新を試みている。
 
 ## Local Session Information
 
