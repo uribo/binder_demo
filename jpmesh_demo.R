@@ -1,4 +1,5 @@
 ## ---- warning=FALSE, message = FALSE, results = "hide"-------------------
+library(magrittr)
 library(jpmesh)
 library(dplyr)
 library(purrr)
@@ -10,8 +11,9 @@ library(leaflet)
 ## ---- include = FALSE----------------------------------------------------
 library(testthat)
 expect_equal(
-  as.character(packageVersion("jpmesh")),
-  "1.1.0"
+  compareVersion(
+    as.character(packageVersion("jpmesh")), "1.1.0.9000"),
+  0L
 )
 expect_equal(
   compareVersion(
