@@ -1,0 +1,20 @@
+Package: binderdemo
+Title: Demonstration Library for Binder
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Shinya", family = "Uryu", email = "suika1127@gmail.com", role  = c("aut", "cre"), comment = c(ORCID = "0000-0002-0493-6186"))
+    )
+Maintainer: Shinya Uryu <suika1127@gmail.com>
+Description: What the package does (one paragraph).
+URL: https://github.com/uribo/binder_demo
+BugReports: https://github.com/uribo/binder_demo/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+  glue,
+  rlang
+Suggests: 
+    testthat
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0
