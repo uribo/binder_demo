@@ -12,26 +12,21 @@ knitr::opts_chunk$set(
 ```
 # binder_demo
 
-[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uribo/binder_demo/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uribo/binder_demo/description_support?urlpath=rstudio)
 
 ```{r}
 library(usethis)
 use_binder_badge()
 ```
 
-`r emo::ji("warning")` 注意 `r emo::ji("construction")`
+```{r, eval = FALSE, echo = TRUE}
+library(binderdemo)
+hello()
+```
 
-binderが公式にRStudioのサポートを開始したようだが、 採用しているdockerimageで`install.R` が実行されないというバグが[発生している](https://github.com/jupyter/repo2docker/issues/237)。
-
-そのためここでは、従来のDockerfileを使ったパッケージのインストール
-~~と`.Rprofile`~~によるパッケージの更新を試みている。
 
 ## Local Session Information
 
 ```{r}
 sessionInfo()
 ```
-
-
-
-
